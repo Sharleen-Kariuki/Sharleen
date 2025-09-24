@@ -127,19 +127,13 @@ nav ul li a:hover::after{
 }
 .row{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 .about-col-1{
     flex-basis: 35%;
 }
-.about-col-1 img{
-    margin-left: 70px;
-   /* padding-left: 20px; */
-    width: 50%;
-    height: auto;
-    border-radius: 15px;   
-}
+
 .about-col-2{
     flex-basis: 60%;
 }
