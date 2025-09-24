@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="header">
+
+
+        <!-- Navigation Bar -->
+        <div class="container">
+            <nav>
+                <!-- <img src="personal-portfolio-img/images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bi bi-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>
+                    Hi, I'm <span class="name-accent">Sharleen</span>
+                    <span class="location">from Nairobi, Kenya</span>
+                </h1>
+                <p class="tagline">Software Developer</p>
+            </div>
+        </div>
+    </div>
+
+
+  <!---About Section--> 
+  
+    <div class="container" id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal-portfolio-img/images/Background2.jpeg">
+               
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I am an enthusiastic beginner in software development with a growing proficiency in languages such as reactjs. 
+                    Driven by curiosity and a desire to create impactful solutions, i am consistently expanding my skill set through hands-on projects and self-learning. 
+                    I bring a keen eye for detail and a problem-solving mindset, making me a fast learner and an adaptable team player. 
+                    With a solid grasp of programming fundamentals, i am excited to explore new tools, frameworks, and methodologies that enhance my development skills. 
+                    I am committed to building a strong foundation for a successful career in tech.
+                </p>
+
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/Mobile App interfaces with Figma</li>
+                        <li><span>Frontend development</span><br>ReactJs, Flutter</li>
+                        <li><span>Backend development</span><br>Laravel</li>
+                        <li><span>Database Management</span><br>PostgreSQL, MongoDB  </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>September 2023- September 2024</span><br>Internship at Dukatech Solutions used ReactJs </li>
+                        <li><span>June 2025 - August 2025</span><br>Internship at WizGlobal Limited used PostgreSQL and Laravel </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>September 2022 - Present</span><br>Degree Course in Kenyatta University: Bsc.Computer Science</li>
+                        <li><span>March 2023 - August 2023</span><br>CCNA Certification 1 and 2</li>
+                        <li><span>March 2025 - Present</span><br>KamiLimu Mentorship Program</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+  </div> 
+
+  <!----------------services------------>
+  <!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="bi bi-code-slash"></i>
+                <h2>Web Design</h2>
+                <p>Sharleen, an intermediate ReactJS developer, specializes in creating responsive and dynamic user interfaces. She offers services in component-based development, state management using hooks, and seamless API integration, delivering engaging, performance-optimized applications.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="bi bi-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Sports play a crucial role in society for several reasons. Firstly, participating in sports promotes physical fitness and overall health. Engaging in regular physical activity helps individuals develop strong muscles and bones, improve cardiovascular health, and maintain a healthy weight.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="bi bi-app"></i>
+                <h2>App Design</h2>
+                <p>Sports play a crucial role in society for several reasons. Firstly, participating in sports promotes physical fitness and overall health. Engaging in regular physical activity helps individuals develop strong muscles and bones, improve cardiovascular health, and maintain a healthy weight.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+
+    </div>
+  </div> -->
+
+  <!--------------------portfolio------------>
+
+  <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="personal-portfolio-img/images/work-1.png" >
+                <div class="layer">
+                    <h3>Gemini Clone Website</h3>
+                    <p>A responsive front-end clone of the Gemini AI homepage featuring modern UI design, animated sections, and mobile-friendly layout </p>
+                    <a href="https://clone-gemini.vercel.app/"><i class="bi bi-link"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/work-2.png" >
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>A responsive music streaming UI prototype featuring searchable tracks and a clean, mobile-friendly layout.</p>
+                    <a href="https://vidtube-sable.vercel.app/"><i class="bi bi-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img/images/work-3.png" >
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files?</p>
+                    <a href="#"><i class="bi bi-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+  </div>
+
+  <!---------contact------->
+  <div id="contact">
+    <div class="container ">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="bi bi-send"></i>sharleenwambui28@gmail.com</p>
+                <p><i class="bi bi-phone"></i>+254 721483296</p>
+                <!-- <div class="social-icons">
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                    <a href=""><i class="bi bi-tiktok"></i></a>
+                </div> -->
+                <a href="personal-portfolio-img/images/Sharleen-Kariuki Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made by  <i class="bi bi-suit-heart-fill"></i> Sharleen <i class="bi bi-suit-heart-fill"></i></p>
+    </div>
+  </div>
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwafS4nzcKuWRzlqJx0qtYecZLA53uc0iAuq2uryJ_B5YEXlzQKLk9G8IW3wD6rJeM8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+         msg.innerHTML = "Message sent successfully"
+         setTimeout(function(){
+            msg.innerHTML = ""
+         },5000)
+         form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+    
+  </script>
+</body>
+</html>
